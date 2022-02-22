@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform || qLearner.com</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <ul class="navUL">
+            <li class="items"> <a href="#"> Home </a> </li>
+            <li class="items"> <a href="#"> About </a> </li>
+            <li class="items"> <a href="#"> Courses </a> </li>
+            <li class="items"> <a href="#"> Internships </a> </li>
+            <li class="items"> <a href="#"> Contact us </a> </li>
+        </ul>
+        <input type="text" placeholder="Search Courses" id="Search">
+    </nav>
+
+    <div class="info" id="infobar">
+        <p>Welcome Mr. Aman ,You are currently viewing your customized dashboard </p>
+
+        <body onload=display_ct();>
+            <span id='ct'></span>
+
+    </div>
+    <div class="container">
+        <div class="container1">
+            <div class="container1a">
+                <img src="./img/img1a.jpg" alt="Images">
+                <p>“The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple
+                    pies were made in the interiors of collapsing stars. We are made of starstuff.”<br>
+                    ― Carl Sagan, Cosmos </p>
+            </div>
+            <div class="container1b">
+                <img src="./img/img1b.png" alt="Images">
+                <p>
+                    Who are we? We find that we live on an insignificant planet of a humdrum star lost in a galaxy
+                    tucked away in some forgotten corner of a universe in which there are far more galaxies than people.
+                    <br>
+                    ―Carl Sagan
+
+                </p>
+                <div class="container1c">
+                    <img src="./img/img1c.jpg" alt="Image">
+                    <p>
+                        However difficult life may seem, there is always something you can do and succeed at. Look up at
+                        the stars and not down at your feet. Work gives you meaning and purpose and life is empty
+                        without it. <br>
+                        -Stephen Hawking
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container2">
+            <div class="container2a">
+                <img src="./img/img2.jpg" alt="Course Image">
+            </div>
+            <div class="container2b">
+                <p>
+
+                    “Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you
+                    know, everyone you ever heard of, every human being who ever was, lived out their lives. The
+                    aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic
+                    doctrines, every hunter and forager, every hero and coward, every creator and destroyer of
+                    civilization, every king and peasant, every young couple in love, every mother and father, hopeful
+                    child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar,"
+                    every "supreme leader," every saint and sinner in the history of our species lived there-on a mote
+                    of dust suspended in a sunbeam. </p>
+                <p>
+                    The Earth is a very small stage in a vast cosmic arena. Think of the endless cruelties visited by
+                    the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some
+                    other corner, how frequent their misunderstandings, how eager they are to kill one another, how
+                    fervent their hatreds. Think of the rivers of blood spilled by all those generals and emperors so
+                    that, in glory and triumph, they could become the momentary masters of a fraction of a dot. </p>
+                <p>
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great
+                    enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come
+                    from elsewhere to save us from ourselves. </p>
+                <p>
+                    The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near
+                    future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the
+                    moment the Earth is where we make our stand. </p>
+                <p>
+                    It has been said that astronomy is a humbling and character-building experience. There is perhaps no
+                    better demonstration of the folly of human conceits than this distant image of our tiny world. To
+                    me, it underscores our responsibility to deal more kindly with one another, and to preserve and
+                    cherish the pale blue dot, the only home we've ever known.” <br> <br>
+                    <em> ― Carl Sagan, Pale Blue Dot: A Vision of the Human Future in Space</em>
+                </p>
+            </div>
+
+        </div>
+        <div class="container3">
+            <ul>
+                <li>Chapters</li>
+                <li>Chapter 1</li>
+                <li>Chapter 2</li>
+                <li>Chapter 3</li>
+                <li>Chapter 4</li>
+                <li>Chapter 5</li>
+                <li>Chapter 6</li>
+                <li>Chapter 7</li>
+                <li>
+                    <button class="btn">Next</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Copyright © 2020-2021 ASP Edu pvt. ltd. © <a href="https://www.linkedin.com/in/aman-kumar2/"
+            target="_blank">Aman Sinha
+        </a>
+    </footer>
+    <script>
+        function display_c() {
+            var refresh = 1000; // Refresh rate in milli seconds
+            mytime = setTimeout('display_ct()', refresh)
+        }
+
+        function display_ct() {
+            var CDate = new Date()
+            var NewDate = CDate.toDateString();
+            NewDate = NewDate + " - " + CDate.toLocaleTimeString();
+            document.getElementById('ct').innerHTML = NewDate;
+            display_c();
+        }
+    </script>
+
+</body>
+
+</html>
